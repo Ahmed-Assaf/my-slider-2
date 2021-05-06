@@ -1,0 +1,472 @@
+header{
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+header .navbar{
+    width: 60%;
+    padding: 25px 35px;
+    margin-top: 3%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 5;
+    
+}
+
+header .navbar .navbar-brand{
+    width: 120px;
+}
+
+header .navbar .navbar-brand,
+header .navbar .nav-link{
+    color: #000 !important;
+    letter-spacing: 1.5px;
+}
+
+header .navbar .navbar-brand{
+    margin: 0;
+}
+
+header .navbar .nav-menu{
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+}
+
+header .navbar .navbar-toggler{
+    border: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+header .navbar .navbar-toggler:focus{
+    outline: none;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+header .navbar .search-icon{
+    cursor: pointer;
+}
+
+header .navbar .search-form{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 40%;
+    display: none;
+}
+
+header .navbar .search-form form{
+    position: relative;
+}
+
+header .navbar .search-form form .form-control{
+    width: 100%;
+    margin: 0 !important;
+    padding: 25px 20px;
+    border-radius: 0;
+    border: none;
+}
+
+header .navbar .search-form form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #000;
+}
+
+header .navbar .search-form form button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+header .navbar .search-form form button:active{
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+header .navbar .search-form form button:focus,
+header .navbar .search-form form .form-control:focus{
+    box-shadow: none !important;
+}
+
+header .intro{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header .intro .content,
+header .intro .swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+header .intro .swiper-container .control-btns{
+    height: 130px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next,
+header .intro .swiper-container .control-btns .swiper-button-prev{
+    position: relative;
+    margin: 0;
+    top: 0;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next{
+    right: auto;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-prev{
+    left: auto;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next:after{
+    content: '\f078';
+    font-family: 'Font Awesome 5 Pro';
+}
+
+header .intro .swiper-container .control-btns .swiper-button-prev:after{
+    content: '\f077';
+    font-family: 'Font Awesome 5 Pro';
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next:focus,
+header .intro .swiper-container .control-btns .swiper-button-prev:focus{
+    outline: none;
+}
+
+
+header .intro .swiper-container .control-btns .swiper-button-next,
+header .intro .swiper-container .control-btns .swiper-button-prev,
+header .intro .swiper-container .control-btns .swiper-button-prev:after,
+header .intro .swiper-container .control-btns .swiper-button-next:after{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-prev:after,
+header .intro .swiper-container .control-btns .swiper-button-next:after{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next:hover,
+header .intro .swiper-container .control-btns .swiper-button-prev:hover{
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+header .intro .swiper-container .control-btns .swiper-button-next:hover::after,
+header .intro .swiper-container .control-btns .swiper-button-prev:hover::after{
+    color: #FFF;
+}
+
+header .intro .swiper-container .control-btns .swiper-pagination{
+    position: relative;
+    color: #000;
+    bottom: 0;
+    width: auto;
+}
+
+header .intro .swiper-container .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 130px;
+    background-color: #FFF;
+}
+
+
+
+header .intro .swiper-container .swiper-slide .slide-content .container,
+header .intro .content .swiper-slide .slide-content .row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .col-md-7{
+    display: flex;
+    align-items: center;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .slogan-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .slogan-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    color: #000;
+
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .slogan-left h4{
+    font-weight: 400;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .slogan-left h1{
+    font-weight: 700;
+    margin: 0 0 40px;
+}
+
+
+header .intro .swiper-container .swiper-slide .slide-content .slogan-right img{
+    width: 90%;
+}
+
+header .intro .swiper-container .swiper-slide .slide-content .slide-bg{
+    position: absolute;
+    top: -80%;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    border-bottom-left-radius: 1100px;
+    border-bottom-right-radius: 380px;
+    opacity: 0.8;
+}
+
+header .intro .swiper-container .first .slide-content .slide-bg{
+    background: linear-gradient(to top right, #35932c, #a7cf63);
+}
+
+header .intro .swiper-container .second .slide-content .slide-bg{
+    background: linear-gradient(to top right, #11698e, #039aa4);
+}
+header .intro .swiper-container .third .slide-content .slide-bg{
+    background: linear-gradient(to top right, #1b262c, #2c383f);
+}
+
+header .intro .swiper-container .fourth .slide-content .slide-bg{
+    background: linear-gradient(to top right, #5d3c31, #805f4e);
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 150; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #0f8dc6; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 15px 0 15px 100px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.sidenav .menu-social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.sidenav .menu-social a{
+    padding: 0;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.sidenav .menu-social a:hover{
+    background-color: #000;
+}
+
+.sidenav .menu-social a:not(:last-of-type){
+    margin-right: 15px;
+}
+
+.side-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0, 0.5);
+    display: none;
+    z-index: 149;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+@media screen and (max-width: 1024px){
+    header .navbar{
+        width: 70%;
+        padding: 25px;
+    }
+
+    header .navbar .nav-menu{
+        width: 62%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .navbar .nav-menu{
+        display: none;
+    }
+
+    header .navbar .search-icon{
+        margin-left: auto;
+    }
+
+    header .navbar .search-form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    header .navbar{
+        width: 90%;
+        padding: 15px 25px;
+    }
+
+    header .navbar .navbar-brand{
+        width: 100px;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content{
+        padding-top: 100px;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content .slide-bg{
+        width: 100%;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content .slogan-left{
+        width: 100%;
+        align-items: center;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content .slogan-left h1{
+        font-size: 1.5rem;
+        margin: 0 0 15px;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content .slogan-left p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    header .intro .swiper-container .control-btns{
+        margin: auto;
+    }
+
+    header .intro .swiper-container .swiper-slide .slide-content .slogan-right img{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 376px){
+    header .navbar{
+        width: 100%;
+    }
+}
